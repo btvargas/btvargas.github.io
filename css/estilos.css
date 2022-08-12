@@ -20,6 +20,7 @@ body {
     display: flex;
     gap: 5em;
     position: absolute;
+    margin-top: 50px;
 }
 
 .hero {
@@ -68,8 +69,22 @@ body {
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
-   
+    
+      
 }
+
+.menu{
+    
+    position: fixed;
+    z-index: 100;    
+    width: 100%;
+    top: 0;
+    right: 20px;
+    display: flex;
+    background: linear-gradient(45deg, hsla(214, 79%, 68%, 0.411) 0%, rgba(22, 109, 240, 0.7) 100%);
+    
+}
+
 
 .nav__items {
     list-style: none;
