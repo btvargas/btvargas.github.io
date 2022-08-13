@@ -81,7 +81,7 @@ body {
     top: 0;
     right: 20px;
     display: flex;
-    background: linear-gradient(45deg, hsl(158, 38%, 56%) 0%, hsl(196, 53%, 32%) 100%);
+    background: linear-gradient(45deg,  hwb(158 39% 27%) 0%, hwb(196 15% 51%) 100%);
     
 }
 
