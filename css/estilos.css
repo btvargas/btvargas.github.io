@@ -16,11 +16,11 @@ body {
     padding: var(--padding-container);
 }
 
-.nav__img a {
+.nav__img {
     display: flex;
     gap: 5em;
     position: absolute;
-    margin-top: 50px;
+    
 }
 
 .hero {
@@ -48,8 +48,167 @@ body {
 }
 
 
-/* Nav */
 
+
+nav {
+    background: #26647B;
+    overflow: auto;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  nav h1 {
+    color: #eee;
+    font-family: 'Pacifico', cursive;
+    font-size: 42px;
+    float: left;
+  }
+  
+  nav h1>a {
+    color: #3ab4a6;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: all 200ms linear;
+  }
+  
+  nav h1>a:hover {
+    background: none;
+    color: #C18055;
+  }
+ nav h1 a img{
+    padding: 10px;
+  }
+  
+  ul {
+    text-align: center;
+    float: right;
+  }
+  
+  ul li {
+    display: inline-block;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    display: block;
+    margin: 0 10px;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: bold;
+    transition: all 200ms linear;
+  }
+  
+  nav a:hover,
+  nav#small a:hover {
+    color: #C18055;
+    background: #fff;
+  }
+  
+  nav#small {
+    background: #fff;
+    padding: 0;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 2px 2px #fff;
+  }
+  
+  nav#small h1,
+  nav#small a {
+    color: #333;
+  }
+  
+  nav#small h1 {
+    font-size: 38px;
+  }
+  
+  nav#small h1>a {
+    color: #C18055;
+  }
+  
+  nav#small h1>a:hover {
+    color: #3ab4a6;
+  }
+  
+  div#content {
+    height: 2200px;
+    background: url('https://s-media-cache-ak0.pinimg.com/originals/03/95/6f/03956fed74537b3d7b0858e9a814748d.jpg')repeat 0 0;
+    opacity: 0.9;
+  }
+  
+  div#content h2 {
+    color: #fff;
+    font-weight: bold;
+    transform: rotate(-10deg);
+    line-height: 60px;
+    font-size: 48px;
+    text-transform: uppercase;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 10%;
+    bottom: 10%;
+    text-shadow: 2px 2px 2px #333;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  div#content h2:before {
+    display: inline-block;
+    background: url('http://www.menoftheras.com/wp-content/gallery/test/arrow.png')no-repeat 0 0;
+    background-size: cover;
+    width: 239px;
+    height: 200px;
+    content: "";
+    transform: rotate(-80deg);
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 700px) {
+    nav {
+      padding: 0;
+    }
+    nav h1 {
+      display: block;
+      float: none;
+      text-align: center;
+      padding: 2px;
+    }
+    nav ul {
+      float: none;
+      padding: 20px;
+    }
+    div#content h2 {
+      width: 30%;
+    }
+    nav#small {
+      padding: 5px;
+    }
+    nav#small ul {
+      padding: 0;
+    }
+    nav#small h1 {
+      padding: 0px;
+      font-size: 1px;
+      margin-bottom: 5px;
+    }
+    nav#small a {
+      font-weight: normal;
+    }
+  }
+
+/* Nav */
+/*
 .nav {
     --padding-container: 0;
     height: 100%;
@@ -62,7 +221,7 @@ body {
        
 }
 
-.nav__link {
+.nav__link ul {
     margin-left: auto;
     padding: 0;
     display: grid;
@@ -73,6 +232,7 @@ body {
       
 }
 
+/*
 .menu{
     
     position: fixed;
@@ -81,11 +241,16 @@ body {
     top: 0;
     right: 20px;
     display: flex;
-    background: linear-gradient(45deg, #63B99A 0%, #26647B 100%);
+    background: linear-gradient(45deg, hwb(158 39% 27%) 0%, hwb(196 15% 51%) 100%);
     
 }
+*/
 
-
+.nav__img {
+    display: block;
+    width: 20px;
+}
+/*
 .nav__items {
     list-style: none;
               
@@ -111,7 +276,7 @@ body {
 .nav__close {
     display: var(--show, none);
 }
-
+*/
 /* Hero container */
 
 .hero__container {
