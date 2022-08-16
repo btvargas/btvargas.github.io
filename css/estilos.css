@@ -78,13 +78,12 @@ body {
     position: fixed;
     z-index: 100;    
     width: 100%;
-    top: 0;
-    right: 20px;
+    left: 0;
+    top: 0%;
     display: flex;
-    background: linear-gradient(45deg,  hwb(158 39% 27%) 0%, hwb(196 15% 51%) 100%);
+    background: linear-gradient(45deg, hwb(158 62% 20%) 0%, hwb(196 15% 51%) 100%);
     
 }
-
 
 .nav__items {
     list-style: none;
@@ -94,6 +93,7 @@ body {
 .nav__links {
     color: #fff;
     text-decoration: none;
+    padding: 10px;
          
 }
 
