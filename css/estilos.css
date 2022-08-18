@@ -218,7 +218,7 @@ body {
 }
 
 
-/* contenedor segunda seccion columnas*/
+/* contenedor segunda seccion*/
 
 .container-card {
     width: 100%;
@@ -280,15 +280,15 @@ body {
     padding: 10px;
     margin-top: 10px;
     text-decoration: none;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
+    color: #26647B;
+    border: 1px solid #26647B;
     border-radius: 4px;
     transition: all 400ms ease;
     margin-bottom: 5px;
 }
 
 .card .contenido-card a:hover {
-    background: #2fb4cc;
+    background: #26647B;
     color: #fff;
 }
 
@@ -420,11 +420,30 @@ body {
     .hero__title {
         font-size: 2.5rem;
     }
+    /*Primera seccion contenedor*/
+    .contenedor {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
     .item:hover .img {
         transform: translate(0, -35px);
     }
     .item:hover .content {
         transform: translate(0, 35px);
+    }
+    /*Segunda seccion contenedor*/
+    .container-card {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .card {
+        margin: 35px;
     }
     .footer__container {
         flex-wrap: wrap;
@@ -444,12 +463,6 @@ body {
     }
     .footer__input {
         flex: 1;
-    }
-    .container-card {
-        flex-wrap: wrap;
-    }
-    .card {
-        margin: 15px;
     }
     .hero__title {
         font-size: 2rem;
