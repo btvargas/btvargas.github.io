@@ -119,12 +119,11 @@ body {
     grid-auto-rows: max-content;
     align-content: center;
     gap: 1em;
-    padding-bottom: 100px;
     text-align: center;
 }
 
 .hero__title {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .hero__paragraph {
@@ -218,12 +217,44 @@ body {
 }
 
 
-/* contenedor segunda seccion*/
+/* Knowledge */
+
+.knowledge {
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.knowledge__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.knowledge__picture {
+    max-width: 500px;
+}
+
+.knowledge__paragraph {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.knowledge__img {
+    width: 100%;
+    display: block;
+}
+
+
+/* contenedor segunda seccion columnas*/
 
 .container-card {
     width: 100%;
     display: flex;
-    max-width: 1100px;
     margin: auto;
 }
 
@@ -232,7 +263,7 @@ body {
     max-width: 1080px;
     margin: auto;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     color: #7a7a7a;
 }
@@ -280,8 +311,8 @@ body {
     padding: 10px;
     margin-top: 10px;
     text-decoration: none;
-    color: #26647B;
-    border: 1px solid #26647B;
+    color: #A65600;
+    border: 1px solid #A65600;
     border-radius: 4px;
     transition: all 400ms ease;
     margin-bottom: 5px;
@@ -296,7 +327,7 @@ body {
 /* Footer */
 
 .footer {
-    background-color: #1D293F;
+    background-color: #26647B;
 }
 
 .footer__title {
@@ -420,30 +451,11 @@ body {
     .hero__title {
         font-size: 2.5rem;
     }
-    /*Primera seccion contenedor*/
-    .contenedor {
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        flex-wrap: wrap;
-    }
     .item:hover .img {
         transform: translate(0, -35px);
     }
     .item:hover .content {
         transform: translate(0, 35px);
-    }
-    /*Segunda seccion contenedor*/
-    .container-card {
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    .card {
-        margin: 35px;
     }
     .footer__container {
         flex-wrap: wrap;
@@ -463,6 +475,22 @@ body {
     }
     .footer__input {
         flex: 1;
+    }
+    .knowledge__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+    .knowledge__picture {
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    .container-card {
+        flex-wrap: wrap;
+    }
+    .card {
+        margin: 15px;
     }
     .hero__title {
         font-size: 2rem;
