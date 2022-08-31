@@ -60,13 +60,14 @@
                     </li>
 
                     <li class="nav__items">
-                        <a href="nosotros.html" class="nav__links">Servicios</a>
+                        <a href="servicios.html" class="nav__links">Servicios</a>
 
                     </li>
 
                     <li class="nav__items">
                         <a href="investigacion.html" class="nav__links">Investigación</a>
                     </li>
+
                     <li class="nav__items">
                         <a href="novedades.html" class="nav__links">Novedades</a>
                     </li>
@@ -96,64 +97,49 @@
     </header>
 
     <main>
+  
 
 
-        <div class="contact_form">
+        <section class="container about">
 
-            <div class="formulario">
-                <h1>Formulario de contacto</h1>
-                <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+            <h2 class="subtitle">Novedades</h2>
 
+        </section>
 
-                <form action="" method="post">
-
-
-                    <p>
-                        <label for="nombre" class="colocar_nombre">Nombre
-                                            <span class="obligatorio">*</span>
-                                        </label>
-                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                    </p>
-
-                    <p>
-                        <label for="email" class="colocar_email">Email
-                                            <span class="obligatorio">*</span>
-                                        </label>
-                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                    </p>
-
-                    <p>
-                        <label for="telefone" class="colocar_telefono">Teléfono
-                                        </label>
-                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                    </p>
-
-                    <p>
-                        <label for="asunto" class="colocar_asunto">Asunto
-                                            <span class="obligatorio">*</span>
-                                        </label>
-                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                    </p>
-
-                    <p>
-                        <label for="mensaje" class="colocar_mensaje">Mensaje
-                                            <span class="obligatorio">*</span>
-                                        </label>
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-                    </p>
-
-                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-                    <p class="aviso">
-                        <span class="obligatorio"> * </span>los campos son obligatorios.
-                    </p>
-
-                </form>
-            </div>
-        </div>
+        <section class="novedades">
+            
+            <details open>
+              <summary>Comedor Estudiantil</summary>
+              <div>
+                <img src="../btvargas.github.io/images/novedad1.jpg" />
+                <p class="about__paragraph">Una nueva propuesta cultural para que la comunidad artística universitaria pueda mostrar su arte en el Comedor "Monseñor Enrique Angelelli"</p>
+              </div>
+            </details>
+            <details>
+              <summary>Proyectos de Extensión</summary>
+              <div>
+                <img src="../btvargas.github.io/images/novedad2.jpg" />
+                <p class="about__paragraph">Se encuentran disponibles los formularios de inscripcion, en el marco de la convocatoria general de Proyectos y Actividades de Extensión...</p>
+              </div>
+            </details>
+            <details>
+              <summary>Becas Comedor Universitario</summary>
+              <div>
+                <img src="../btvargas.github.io/images/comedor-becas.jpg" alt="Novedad3">
+                <p class="about__paragraph">Recorda que si sos estudiante Universitario podes acceder a las Becas Comedor</p>
+              </div>
+            </details>
+            <details>
+                <summary>Día de las infancias</summary>
+                <div>
+                  <img src="../btvargas.github.io/images/infancias.jpg" alt="Novedad3">
+                  <p class="about__paragraph">La Universidad Nacional de La Rioja, convoca a sumarse a la colecta solidaria por el dia de las infancias</p>
+                </div>
+              </details>
+          </section>
 
 
-
+        
     </main>
 
 
@@ -171,7 +157,7 @@
 
                 <ul class="nav__link--footer">
                     <li class="nav__items">
-                        <a href="contacto.html" class="nav__links">Volver</a>
+                        <a href="novedades.html" class="nav__links">Volver</a>
                     </li>
                     <li class="nav__items">
                         <a href="index.html" class="nav__links">Inicio</a>
